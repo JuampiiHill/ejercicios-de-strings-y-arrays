@@ -10,6 +10,8 @@ imprimir un mensaje por consola. Las que retornan algo, deberán incluir la pala
 console.log(calcularAreaRectangulo(5, 3)); // Resultado: 15
 */
 
+console.log("1. Calcular el área de un rectángulo");
+
 let base = parseInt(prompt("Ingrese la base de su rectángulo"));
 let altura = parseInt(prompt("Ingresa la altura de su rectángulo"));
 
@@ -30,7 +32,9 @@ Escribe una función que reciba una cadena de texto (string) y devuelva la canti
 console.log(contarPalabras("Humahuaca es un lugar copado")); // Resultado: 5
 */
 
-let texto = prompt("Ejercicio número 2: Ingrese su texto");
+console.log("2. Contar palabras en una cadena");
+
+let texto = prompt("Ejercicio número 2: Ingrese su texto para contabilizar las palabras");
 
 function contarPalabras(texto) {
     let palabras = texto.split(" ");
@@ -48,7 +52,10 @@ Escribe una función que reciba una cadena y cuente el número de vocales.
 console.log(contarVocales("JavaScript")); // Resultado: 3
 */
 
-let palabra = prompt("Ejercicio número 3: Ingrese una palabra");
+console.log("3. Contar vocales en una cadena");
+
+
+let palabra = prompt("Ejercicio número 3: Ingrese una palabra para contar las vocales de la palabra");
 
 function contarVocales(palabra) {
     const vocales = "aeiouAEIOU";
@@ -73,14 +80,17 @@ Escribe una función que reciba un string y devuelva true o false si el string e
 // Ejemplos, neuquen, reconocer, rallar
 console.log(esPalindromo("neuquen")); // true*/
 
-//let palabra = prompt("Ingrese una palabra para comprobar si es políndromo");
-function esPalindromo(palabra) {
-    let original = palabra.toLowerCase();
+console.log("4. Encontrar el palíndromo");
+
+let palabraPolindromo = prompt("Ejercicio número 4: Ingrese una palabra para comprobar si es políndromo");
+
+function esPalindromo(palabraPolindromo) {
+    let original = palabraPolindromo.toLowerCase();
     let invertida = original.split("").reverse().join("");
     return original === invertida;
 }
 
-console.log(esPalindromo("Neuquen"))
+console.log(esPalindromo(palabraPolindromo));
 
 // -------------------------------------------------------------------------------------------------------------------
 
@@ -92,13 +102,15 @@ que equivale a 7 veces la edad humana.
 Esta funcion no debe devolver un valor sino mostrar por consola un mensaje como el del ejemplo.
 edadCanina(7); // Tu perro tiene 49 años humanos*/
 
-let edadPerro = prompt("Ingrese los años de su perro");
+console.log("5. Crear un programa para convertir la edad de un perro a años humanos");
+
+let edadPerro = prompt("Ejercicio número 5: Ingrese los años de su perro para calcular su edad real");
 
 function edadCanina(edadCanina) {
     return edadCanina * 7
 }
 
-console.log("Tu perro tiene: " + edadCanina(edadPerro) + " años.");
+console.log(`Tu perro tiene ${edadCanina(edadPerro)} años`);
 
 // -------------------------------------------------------------------------------------------------------------------
 
@@ -108,7 +120,9 @@ console.log("Tu perro tiene: " + edadCanina(edadPerro) + " años.");
 Escribe una función que reciba una cadena y convierta la primera letra de cada palabra en mayúscula.
 console.log(capitalizarPalabras("hola mundo desde javascript")); // Resultado: "Hola Mundo Desde Javascript*/
 
-let cadena = prompt("Ingrese una palabra");
+console.log("6. Convertir la primera letra de cada palabra en mayúscula");
+
+let cadena = prompt("Ejercicio número 6: Ingrese una palabra para convertir la primera letra en mayúscula");
 
 function capitalizarPalabras(cadena) {
     const palabras = cadena.split(" ")
@@ -130,7 +144,9 @@ console.log(capitalizarPalabras(cadena));
 Escribe una función que tome un número n y devuelva los primeros n números de la sucesión de Fibonacci.
 console.log(fibonacci(5)); // Resultado: [0, 1, 1, 2, 3]*/
 
-let n = prompt("Ingrese un numero para la secuencia fibonacci");
+console.log("7. Generar los primeros N números de la sucesión de Fibonacci");
+
+let n = prompt("Ejercicio número 7: Ingrese un número para la secuencia fibonacci");
 function fibonacci(n){
     let a = 0;
     let b = 1;
@@ -150,6 +166,8 @@ function fibonacci(n){
 console.log(fibonacci(n))
 
 // -------------------------------------------------------------------------------------------------------------------
+
+console.log("8. Ejercicios de arrays 1");
 
 /*======================
 8. Lista de Productos
@@ -191,6 +209,9 @@ console.log("valor total del inventario: " + totalInventario);
 /*====================================
     9. Estudiantes y Calificaciones
 ====================================*/
+
+console.log("9. Ejercicios de arrays 2");
+
 const estudiantes = [
  { id: 1, nombre: 'Ana', edad: 20, calificaciones: [8, 9, 7, 8] },
  { id: 2, nombre: 'Carlos', edad: 22, calificaciones: [6, 7, 8, 7] },
@@ -246,6 +267,9 @@ console.log(`Edad promedio ${edadPromedio}`);
 /*===================
     10. Películas
 ====================*/
+
+console.log("10. Ejercicios de arrays 3");
+
 const peliculas = [
  { id: 1, titulo: 'El Padrino', año: 1972, duracion: 175, genero: 'drama', rating: 9.2 },
  { id: 2, titulo: 'Pulp Fiction', año: 1994, duracion: 154, genero: 'crimen', rating: 8.9 },
